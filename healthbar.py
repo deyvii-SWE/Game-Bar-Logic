@@ -61,8 +61,8 @@ class Player:
 
 
 def display_bars(bars):
-    def calc_filled_empty(max_hp, actual_hp, bar_width):
-        filled = round(actual_hp / max_hp * bar_width)
+    def calc_filled_empty(max_value, actual_value, bar_width):
+        filled = round(actual_value / max_value * bar_width)
         empty = bar_width - filled
 
         return filled, empty
